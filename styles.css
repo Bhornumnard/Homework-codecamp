@@ -1,0 +1,54 @@
+.nickname{
+    font-size:30px;
+    font-style: unset;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-color: brown;
+    color: chocolate;
+    border-block-end-color: cornflowerblue;
+    border: olive;
+    text-shadow: 3px 5px 2px burlywood;
+}
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 5px 2px khaki;
+    color:darkcyan;
+    border-style: outset;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 1% 20% 3% 20%;
+    padding: 1% 0px 1% 0px;
+    text-align:center;
+}
+.mypic{
+    border-radius: 700px;
+    border-style: outset;
+    border-color: tomato;
+    border-top-style: groove;
+    border-top-color: crimson;
+    border-bottom-style: groove;
+    border-bottom-color: crimson;
+    border-block-end-width: medium;
+    border-width: 10px;
+    -webkit-box-shadow: 10px 16px 11px 3px rgba(0,0,0,0.89); 
+box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.89);
+}
+.button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 20px;
+    background-color: seagreen;
+}
+
+.mypros{
+    text-align:center;
+    text-shadow: 3px 5px 2px olivedrab;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+#addList {
+    text-shadow: 3px 5px 2px mediumseagreen;
+}
+#cursor {
+    text-shadow: 3px 4px 2px olivedrab;
+    color: darkred;
+}

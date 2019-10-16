@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel ="stylesheet" type ="text/css">
+    <title>Document</title>
+
+    <style>
+            body {
+              background-color: honeydew;
+              background-image: url("https://ak5.picdn.net/shutterstock/videos/7596475/thumb/1.jpg");
+            }       
+    </style>
+    
+</head>
+<body>
+        <h1 class="title"> My profile </h1>
+    <style> img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+    <img class="mypic" src="myimg.jpg" alt="no pic" style="max-width:50%;height:auto;" media="(max-width:500px)">
+   
+    <p class ="nickname"> My name is : <span id="Name">Bhornumnard</span> <span id = "SurName">Wanasrisun</span>
+    <button onclick="editname()" class="button">edit name</button> <button onclick="editsurname()" class="button">edit surname</button>
+<script>
+
+function editname(){
+    let yourName = prompt("edit your name");
+    document.getElementById("Name").innerHTML = yourName;
+    return Name;
+}
+function editsurname(){
+    let yourSurname = prompt("edit your surname");
+    document.getElementById("SurName").innerHTML = yourSurname;
+    return SurName;
+}
+</script></p>
+
+    <p class="nickname">my nickname is : tak </p>
+
+    <P id="edu" onmouseover="show()" onmouseout="hide()">Education : I've gradueted in biology bachelor degree</P>
+    <P class="mypros">My Prosanality</P>
+    <img src="ESFJ.JPG"style="max-width:90%;height:auto;">
+    <p>
+        <ul id="addList"> My talent and skills
+        <li>English typing up to 50 WPM</li> 
+        <li>Biology Laboratory</li>
+        <li>Gifted Math student </li>
+        <li>Good in English </li>
+        <li>Logic skill</li>
+        </ul>
+    </p>
+<script>
+    function add(){
+  let mylist = document.createElement("LI");
+  let addtext = prompt("Add your talent or your skill");
+  let textnode = document.createTextNode(addtext);
+  mylist.appendChild(textnode);
+  document.getElementById("addList").appendChild(mylist);
+}
+
+   /*
+First create an LI node,
+then create a Text node,
+then append the Text node to the LI node.
+Finally append the LI node to the list
+   */
+
+    function remove(){
+  let delist = document.getElementById("addList");
+  let value = parseInt(prompt("Which list your want to detele"));
+  if (delist.hasChildNodes()) {
+    delist.removeChild(delist.childNodes[value]);
+  }
+
+  }
+
+    function show(){
+      document.getElementById("edu").style.color="blue";
+    }
+
+    function hide(){
+      document.getElementById("edu").style.color="black";
+    }
+
+</script>
+<button class ="button" onclick = "add()"> add list </button>
+<button class ="button" onclick = "remove()"> delete list </button>
+
+
+<style> 
+/*
+ศึกษาเทคนิคนี้เพิ่มเติมยังไม่เข้าใจก๊อบโค้ดมาใช้
+*/
+        .tooltip {
+          position: relative;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+        </style>
+
+<p>Portfolio in Pre codecamp</p>
+
+
+
+<ol id="cursor" onmouseover="pointer()">
+    <li onclick ="scratch1()" class="tooltip"> scatch1 <span class="tooltiptext"> click me </span></li>
+    <li onclick ="scratch2()" class="tooltip"> scatch2 <span class="tooltiptext"> click me </span></li>
+    <li onclick=" scratch3()" class="tooltip"> scatch3 <span class="tooltiptext"> click me </span></li>
+    <li onclick="firstWeb()" class="tooltip">first wabpage<span class="tooltiptext">click me</span></li>
+    <li onclick="calWeb()" class="tooltip">calculator webpage<span class="tooltiptext">click me</span></li>
+    <li onclick="github()" class="tooltip">github work<span class="tooltiptext"> cilck me</span></li>
+</ol>
+<script>
+    function scratch1(){
+        window.open("https://scratch.mit.edu/projects/333305444/");
+    }
+
+    function scratch2(){
+        window.open("https://scratch.mit.edu/projects/328498969/")
+    }
+
+    function scratch3() {
+        window.open("https://scratch.mit.edu/projects/333172088/")
+    }
+
+    function pointer(){
+        document.getElementById("cursor").style.cursor="pointer";
+    }
+
+    function firstWeb(){
+        window.open("https://liveweave.com/x0hPWg")
+    }
+
+    function calWeb(){
+        window.open("https://liveweave.com/GoRU7G")
+    }
+
+    function github(){
+        window.open("")
+    }
+
+</script>
+<button onclick="setbackground()"> set background</button>
+
+<script>
+function setbackground(){
+    document.body.style.background = "papayawhip"
+}
+</script>
+</body>
+</html>
